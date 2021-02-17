@@ -1,0 +1,14 @@
+# .circleci/config.yml
+version: 2.1
+jobs:
+  build:
+    macos:
+      xcode: 11.3.0
+    steps:
+      - checkout
+      - run: echo "1"
+
+workflows:
+  build-job:
+    jobs:
+      - build
