@@ -6,7 +6,7 @@ jobs:
       xcode: 11.3.0
     steps:
       - checkout
-      - run: echo "1"
+      - run: echo "did it run"
 
 workflows:
   build-job:
